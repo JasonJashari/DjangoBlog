@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form method="post">
+        {% csrf_token %}
+        <fieldset>
+            <legend><h4>Register</h4></legend>
+            {{ form.as_table }}
+        </fieldset>
+        <input type="submit" value="Sign Up">
+    </form>
+
+{% endblock %}
